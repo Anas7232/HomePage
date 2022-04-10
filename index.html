@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- This is Font Awesome CDN Link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Start main header seaction include just navbar -->
+
+    <header> 
+        <nav>
+            <div class="logo">
+                SPORTSHOES.COM
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="#"> MEN </a></li>
+                <li><a href="#"> WOMEN </a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- End main header seaction include just navbar -->
+
+    <!-- Start section is slideshow section -->
+
+    <div class="slider">
+        <div class="myslider fade">
+         
+            <img src="./images/main_container.php" style="height: 100vh;" class="slider_img" alt="">
+        </div>
+        <div class="myslider fade">
+             <img src="./images/slide1.php" style="height: 100vh;" class="slider_img" alt="">
+         </div>
+         <div class="myslider fade">
+             <img src="./images/slide2.php" style="height: 100vh;" class="slider_img" alt="">
+         </div>
+         <div class="dotbox" style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+      <!-- End section is slideshow section -->
+
+    <!-- Start The Search Bar Section -->
+
+    <br><br><br><br><br><br>
+
+    <div class="search-bar">
+        <div class="searchbox">
+            <input type="text" placeholder="Search Products...." class="search-input">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+
+     <!-- End The Search Bar Section -->
+
+     <!-- Start The card Section -->
+
+   <div class="cards" id="cards">
+       <div class="card">
+           <img src="./images/1.php" style="width: 350px; height: 300px;" alt="">
+           <h3 style="font-size: 18px;font-weight: 600;padding: 20px; font-family: 'Roboto', sans-serif;"> NIKE ZOOM LABRON SLIDIER 10 </h3>
+        </div>
+        <div class="card">
+            <img src="./images/2.php" style="width: 350px; height: 300px;" alt="">
+            <h3 style="font-size: 18px;font-weight: 600;padding: 20px; font-family: 'Roboto', sans-serif;">JORDAN ULTRA FLY</h3>
+         </div>
+         <div class="card">
+            <img src="./images/3.php" style="width: 350px; height: 300px;" alt="">
+            <h3 style="font-size: 18px;font-weight: 600;padding: 20px; font-family: 'Roboto', sans-serif;">LABRON XIII LIMITED</h3>
+         </div>
+         <div class="card">
+            <img src="./images/4.php" style="width: 350px; height: 300px;" alt="">
+            <h3 style="font-size: 18px;font-weight: 600;padding: 20px; font-family: 'Roboto', sans-serif;"> JORDAN ULTRA FLY </h3>
+         </div>
+         <div class="card">
+            <img src="./images/5.php" style="width: 350px; height: 300px;" alt="">
+            <h3 style="font-size: 18px;font-weight: 600;padding: 20px; font-family: 'Roboto', sans-serif;">KYRIE 2</h3>
+         </div>
+         <div class="card">
+            <img src="./images/6.php" style="width: 350px; height: 300px;" alt="">
+            <h3 style="font-size: 18px;font-weight: 600;padding: 20px; font-family: 'Roboto', sans-serif;">LABRON XIII LIMITED</h3>
+         </div>
+   </div>
+
+   <!-- End The card Section -->
+
+   <!-- Start The last section -->
+
+   <div class="last-section">
+       <div class="img-section">
+           <div class="img-1">
+            <h1 style="color: #fff;margin-top: 90%;font-size: 35px;font-family: 'Roboto', sans-serif; padding-left: 20px;"> FIGHT LIKE A SPIDER </h1>
+            <p style="color: gray;font-size: 18px;font-family: 'Roboto', sans-serif;padding: 5px 0px;padding-left: 20px;">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Nam assumenda eveniet <br> dolorem sit blanditiis minima</p>
+          
+            <a href="#" style="padding: 5px;color: #fff;padding-left: 20px;font-family: 'Roboto', sans-serif"> READ MORE </a>
+           </div>
+           <div class="img-2">
+            <h1 style="color: #fff;margin-top: 90%;font-size: 35px;font-family: 'Roboto', sans-serif; padding-left: 20px;"> RUN LIKE A CHEETAH </h1>
+            <p style="color: gray;font-size: 18px;font-family: 'Roboto', sans-serif;padding: 5px 0px;padding-left: 20px;">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Nam assumenda eveniet <br> dolorem sit blanditiis minima</p>
+          
+            <a href="#" style="padding: 5px;color: #fff;padding-left: 20px;font-family: 'Roboto', sans-serif"> READ MORE </a>
+           </div>
+       </div>
+   </div>
+
+   <!-- End The last section -->
+
+
+   <!-- This Is JS File Linked -->
+  
+   <script src="jsfile.js"></script>
+  
+
+</body>
+</html>

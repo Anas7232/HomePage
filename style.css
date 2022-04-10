@@ -1,0 +1,382 @@
+/* Start The Slider CSS */
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #cecece;
+}
+.myslider{
+    height: 100vh;
+    overflow: hidden;
+}
+.myslider img{
+    height: 100vh;
+    width: 100%;
+}
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.1s;
+    user-select: none;
+}
+.prev:hover, .next:hover{
+    color: blue;
+}
+.next{
+    right: 0;
+}
+.dotbox{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 7%;
+    cursor: pointer;
+}
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.dot:hover{
+    border-color: #cecece;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+} 
+ 
+@-webkit-keyframes fade{
+    from {opacity: 0.8}
+    to { opacity: 1 }
+}
+
+@keyframes fade{
+    from {opacity: 0.8}
+    to { opacity: 1 }
+}
+
+@-webkit-keyframes posi{
+    from{ left: 25%; }
+    to { left: 15%; }
+}
+
+@keyframes posi{
+    from{ left: 25%; }
+    to { left: 15%; }
+}
+
+.slider_img{
+    width: 100%;
+    height: 100vh;
+    transform: scale(1.5, 1.5);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 40s;
+}
+
+@-webkit-keyframes zoomin{
+    from { transform: scale(1,1); }
+    to { transform: scale(1.5,1.5); }
+}
+
+@keyframes zoomin{
+    from { transform: scale(1,1); }
+    to { transform: scale(1.5,1.5); }
+}
+
+@media only screen and (max-width: 800px){
+    .myslider{
+        height: 100vh;
+    }
+    @-webkit-keyframes posi2 {
+        from { top: 35%; }
+        to { top: 50%; }
+    }
+    @keyframes posi2 {
+        from { top: 35%; }
+        to { top: 50%; }
+    }
+}
+
+  /* End Slider CSS */
+
+
+    /* Start The NavBar CSS Code */
+
+header{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    padding: 20px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0 100px;
+}
+nav .logo{
+    font-size: 33px;
+    color: #cecece;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul li{
+    margin: 0 3px;
+    font-size: 10px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    transition: all 0.5s;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 3px;
+    font-weight: 400;
+}
+
+#click:checked ~ ul{
+    left: 0;
+}
+
+#click{
+    display: none;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #CEAEE9 ;
+    transition: 0.3s;
+}
+nav .menu-btn i{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+    nav .menu-btn i{
+        display: block;
+        font-size: 17px;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    nav .logo{
+        font-size: 20px;
+    }
+    nav ul li{
+        margin: 40px 0;
+        font-size: 18px;
+    }
+    nav ul li a{
+        font-size: 13px;
+        display: block;
+    }
+    nav ul li a:hover{
+        text-decoration: none;
+        color: #CEAEE9 ;
+        transition: 0.3s;
+    }
+    .img-section .img-1{
+        height: 600px;
+        width: 365px;
+    }
+    .img-section .img-2{
+        height: 600px;
+        width: 365px;
+    }
+}
+    /* End The NavBar CSS Code */
+
+
+    /* Start The cards CSS Code */
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 63%;
+    transform: translateX(-26%);
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.hero-container{
+    width: 100%;
+    height: 100vh;
+}
+.cards{
+    margin: 50px auto;
+    width: 75%;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 30px;
+    cursor: pointer;
+}
+.card{
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+img{
+    width: 100%;
+}
+.last-section{
+    width: 100%;
+}
+.img-section{
+    margin: 130px auto;
+    width: 75%;
+    align-items: center;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 0px;
+}
+.img-section img{
+    position: relative;
+}
+
+ /* End The cards CSS Code */
+
+.img-1{
+    width: 100%;
+    height: 700px;
+    background-image: url(./images/lastone.php);
+    background-position: center;
+    background-size: cover;
+}
+.img-2{
+    width: 100%;
+    height: 700px;
+    background-image: url(./images/lastsecond.php);
+    background-position: center;
+    background-size: cover;
+}
+ /* Start The Search CSS Code */
+.search-bar{
+    margin: 10px auto;
+    width: 75%;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+    grid-gap: 30px;
+    cursor: pointer;
+}
+.search-input{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 1000px;
+    font-family: 'Roboto', sans-serif
+}
+.searchbox{
+    width: 100%;
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.fas{
+    color: rgba(0, 0, 0, 0.4) ;
+}
+
+ /* End The Search CSS Code */
+
+ /* Start The Last Section Responsive Media Queries */
+
+@media only screen and (max-width: 1220px){
+    .last-section .img-section .img-1{
+        height: 1010px;
+    }
+    .last-section .img-section .img-2{
+        height: 1010px;
+    }
+}
+@media only screen and (max-width: 1214px){
+    .last-section .img-section .img-1{
+        height: 900px;
+    }
+    .last-section .img-section .img-2{
+        height: 900px;
+    }
+}
+@media only screen and (max-width: 877px){
+    .search-bar{
+        margin: 10px auto;
+        width: 75%;
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-gap: 30px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 880px){
+    .search-input{
+        width: 500px;
+    }
+    .last-section .img-section .img-1{
+        width: 100%;
+        height:900px;
+    }
+    .last-section .img-section .img-2{
+        width: 100%;
+        height:900px;
+    }
+    .last-section .img-section .img-1 h1{
+        margin-top: 0;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .last-section .img-section .img-1{
+        width: 80%;
+        height:750px;
+    }
+    .last-section .img-section .img-2{
+        width: 80%;
+        height:750px;
+    }
+    .last-section .img-section .img-1 h1{
+        margin-top: 0;
+        font-size: 5px;
+    }
+}
+
+/* End The Last Section Responsive Media Queries */
